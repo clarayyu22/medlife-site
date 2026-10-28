@@ -36,7 +36,7 @@ https://www.imss.caltech.edu/services/web-hosting-development/web-hosting/managi
 1. Connect on campus or use Caltech VPN with **Tunnel All**.
 2. In your SFTP client, connect to **portal.caltech.edu**, protocol **SFTP**, port **22**, using your own authorized Caltech account. Verify the server fingerprint through a trusted Caltech source if prompted. Do not put credentials in website files.
 3. Confirm the exact club document-root path from the hosting setup message or IMSS. The general documented pattern is `/srv/www.SITE.caltech.edu/www/docroot/`; do not assume this is the club's literal path. Ask IMSS for the docroot for `medlife.clubs.caltech.edu` if unclear.
-4. Download a backup of existing files before replacing anything. Upload `index.html`, `styles.css`, `script.js`, and the `assets/` folder into the confirmed docroot, preserving their relative layout. Do not upload the ZIP, README, or preview screenshot. Uploading to docroot publishes the files.
+4. Download a backup of existing files before replacing anything. Upload `index.html`, `styles.css`, `script.js`, and the `assets/` and `documents/` folders into the confirmed docroot, preserving their relative layout. Do not upload the ZIP, README, or preview screenshot. Uploading to docroot publishes the files.
 5. Use **0664 for files** and **2775 for directories**, preserving the group that owns docroot so other club maintainers can edit. Some clients cannot set the setgid bit; ask IMSS if needed.
 6. Visit https://medlife.clubs.caltech.edu, hard-refresh, and check mobile layout, menu, section links, expanded panels, images, and all real join/resource links. If an older index.php or server setting takes precedence, ask IMSS before changing it.
 
@@ -60,3 +60,7 @@ Content sources reviewed: user-confirmed event highlights; `25-26 Event Timeline
 ## Blog
 
 Two expandable articles were adapted from the supplied `Website Content.pdf`: the MCAT Resource Roadmap and CHLA Preceptorship Shadowing Experience. No author names or publication dates were supplied. Personal study recommendations are labeled as student perspectives; program timelines describe the reported experience, not guaranteed future availability. The source’s mixed C/P and B/B subject lists were consolidated rather than reproduced as official exam specifications.
+
+## Club constitution
+
+[Read the club constitution (PDF)](documents/club-constitution.pdf). The PDF preserves the text of the supplied Club Constitution Word document, with layout adapted for PDF. Keep `documents/` alongside the website source when pushing to GitHub or uploading to static hosting. The footer links to this local PDF and to https://github.com/clarayyu22/medlife-site.

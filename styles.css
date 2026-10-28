@@ -40,7 +40,7 @@
 /* A native cursor asset keeps tracking immediate, with a standard fallback. */
 @media (hover: hover) and (pointer: fine) {
   body { cursor: url("assets/heart-cursor.svg") 16 28, auto; }
-  a, button, summary { cursor: pointer; }
+  a, button, summary { cursor: url("assets/heart-cursor.svg") 16 28, pointer; }
   input, textarea, [contenteditable="true"] { cursor: text; }
 }
 
@@ -49,3 +49,6 @@
 @media(max-width:760px){.blog-posts{grid-template-columns:1fr;gap:40px}.blog-post>h3{font-size:27px}}
 
 .event-photo-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:0;overflow:hidden}.event-photo-pair>div{position:relative;height:100%;min-width:0}.event-photo-pair img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+
+.site-footer{align-items:flex-start}.footer-identity address{font-size:12px;font-style:normal;color:var(--muted);margin-top:16px}.footer-info{display:flex;flex-direction:column;align-items:flex-end;gap:14px}.footer-info>p{font-size:11px;margin:12px 0}.footer-links{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:22px;width:auto;padding:0;font-size:12px}.footer-links a{padding:0}.github-link{display:inline-flex;align-items:center;gap:7px}.github-link svg{flex-shrink:0}.footer-links a:hover{text-decoration:underline}html.js .footer-links:not(.open){display:flex}
+@media(max-width:760px){.footer-info{align-items:flex-start}.footer-links{justify-content:flex-start;gap:18px}.site-footer{gap:20px}}
