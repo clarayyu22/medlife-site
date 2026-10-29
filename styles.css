@@ -52,3 +52,10 @@
 
 .site-footer{align-items:flex-start}.footer-identity address{font-size:12px;font-style:normal;color:var(--muted);margin-top:16px}.footer-info{display:flex;flex-direction:column;align-items:flex-end;gap:14px}.footer-info>p{font-size:11px;margin:12px 0}.footer-links{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:22px;width:auto;padding:0;font-size:12px}.footer-links a{padding:0}.github-link{display:inline-flex;align-items:center;gap:7px}.github-link svg{flex-shrink:0}.footer-links a:hover{text-decoration:underline}html.js .footer-links:not(.open){display:flex}
 @media(max-width:760px){.footer-info{align-items:flex-start}.footer-links{justify-content:flex-start;gap:18px}.site-footer{gap:20px}}
+
+/* Give the Join introduction room for one line on wide screens. */
+@media(min-width:1100px){.join{grid-template-columns:.8fr 1.4fr;gap:48px}.join-panel>p:not(.fine){max-width:none;font-size:14px}}
+
+.trip-itinerary{display:block;margin:18px 0 24px}.trip-itinerary img{display:block;width:100%;height:auto}
+
+.trip-itinerary{margin-bottom:8px}.trip-itinerary-caption{font-size:12px;color:var(--muted);margin:0 0 24px}
